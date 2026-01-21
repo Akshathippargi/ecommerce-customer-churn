@@ -1,13 +1,13 @@
-# 📉 E-Commerce Customer Churn Prediction (End-to-End ML Project)
+# E-Commerce Customer Churn Prediction (End-to-End ML Project)
 
-## 📌 Project Overview
+## Project Overview
 This project implements an end-to-end customer churn prediction system using machine learning. It covers the complete lifecycle from raw data preprocessing to model training, evaluation, and deployment via Streamlit.
 
 The objective is to identify customers at risk of churn using historical purchase behavior and provide a reproducible, production-ready machine learning pipeline.
 
 ---
 
-## 🎯 Business Problem
+## Business Problem
 Customer churn directly impacts revenue in e-commerce businesses. Early identification of churn-prone customers enables proactive retention strategies such as targeted offers, loyalty programs, and personalized engagement.
 
 **Objective:**  
@@ -15,7 +15,7 @@ Predict the probability that a customer will churn based on transactional purcha
 
 ---
 
-## 🗂 Dataset
+## Dataset
 - **Source:** UCI Machine Learning Repository – Online Retail Dataset  
 - **Type:** Transaction-level e-commerce data  
 
@@ -30,7 +30,7 @@ Raw data files are excluded from the repository to keep it lightweight and repro
 
 ---
 
-## 🧠 Churn Definition
+## Churn Definition
 A customer is labeled as **churned (1)** if they have **not made any purchase in the last 90 days**, otherwise labeled as **active (0)**.
 
 This definition reflects real-world churn logic based on customer inactivity.
@@ -44,12 +44,12 @@ Customer-level features were engineered using an RFM-inspired approach:
 - **total_units** – Total quantity of products purchased  
 - **monetary_value** – Total spend by the customer  
 
-### ⚠️ Data Leakage Handling
+### Data Leakage Handling
 The recency feature was initially identified as a source of target leakage and was removed from model training to ensure realistic, forward-looking predictions.
 
 ---
 
-## 🤖 Model & Technologies Used
+## Model & Technologies Used
 - **Model:** XGBoost Classifier  
 - **Programming Language:** Python  
 - **Data Processing:** Pandas, NumPy  
@@ -61,7 +61,7 @@ The recency feature was initially identified as a source of target leakage and w
 
 ---
 
-## 📊 Model Evaluation & Performance
+## Model Evaluation & Performance
 The final model was evaluated using business-relevant metrics.
 ROC AUC: ~0.85
 Churn Recall: ~82%
@@ -91,7 +91,7 @@ ecommerce-customer-churn/
 
 ---
 
-## 🧩 Model Explainability
+## Model Explainability
 SHAP (SHapley Additive exPlanations) was used in exploratory notebooks to interpret model predictions.
 
 **Key churn drivers identified:**
@@ -102,7 +102,7 @@ Explainability was kept offline to maintain Streamlit app stability and performa
 
 ---
 
-## 🚀 Streamlit Application
+## Streamlit Application
 A Streamlit web application enables:
 - Input of customer purchase behavior  
 - Real-time churn probability prediction  
