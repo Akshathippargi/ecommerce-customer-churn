@@ -8,11 +8,10 @@ import os
 # -----------------------
 st.set_page_config(
     page_title="Customer Churn Prediction",
-    page_icon="📉",
     layout="centered"
 )
 
-st.title("📉 Customer Churn Prediction Dashboard")
+st.title("Customer Churn Prediction Dashboard")
 st.write(
     """
     Predict the likelihood of a customer churning based on
@@ -66,7 +65,7 @@ input_df = pd.DataFrame([{
 # -----------------------
 # Prediction
 # -----------------------
-st.markdown("## 🔍 Prediction")
+st.markdown("## Prediction")
 
 if st.button("Predict Churn Risk"):
     prob = model.predict_proba(input_df)[0][1]
@@ -78,14 +77,14 @@ if st.button("Predict Churn Risk"):
 
     with col2:
         if prob >= 0.6:
-            st.error("🔴 High Risk")
+            st.error("High Risk")
         elif prob >= 0.3:
-            st.warning("🟠 Medium Risk")
+            st.warning("Medium Risk")
         else:
-            st.success("🟢 Low Risk")
+            st.success(" Low Risk")
 
     st.info(
-        "💡 Tip: Customers with low purchase frequency and low lifetime value "
+        " Tip: Customers with low purchase frequency and low lifetime value "
         "are more likely to churn."
     )
 
