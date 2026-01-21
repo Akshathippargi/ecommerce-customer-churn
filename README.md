@@ -2,7 +2,7 @@
 ## Live Application
 The customer churn prediction model is deployed using Streamlit Cloud.
 
-🔗 **Live Demo:**  
+**Live Demo:**  
 https://ecommerce-customer-churn-akshat.streamlit.app
 
 ## Project Overview
