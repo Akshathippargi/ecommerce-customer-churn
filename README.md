@@ -1,4 +1,9 @@
 # E-Commerce Customer Churn Prediction (End-to-End ML Project)
+## Live Application
+The customer churn prediction model is deployed using Streamlit Cloud.
+
+🔗 **Live Demo:**  
+https://ecommerce-customer-churn-akshat.streamlit.app
 
 ## Project Overview
 This project implements an end-to-end customer churn prediction system using machine learning. It covers the complete lifecycle from raw data preprocessing to model training, evaluation, and deployment via Streamlit.
